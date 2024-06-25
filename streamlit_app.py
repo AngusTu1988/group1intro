@@ -72,25 +72,20 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 
-# 設定字體（這裡使用思源黑體）
-font_path = "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc"  # 修改為您系統中的字體路徑
-prop = fm.FontProperties(fname=font_path)
-
-# 資料
+# Data
 age_labels = ["13 - 15", "16 - 18", "19 - 30", "31 - 50", "51 - 70", "71 - "]
 lower_limits = [2400, 2150, 1850, 1800, 1700, 1650]
 upper_limits = [2800, 3350, 2700, 2650, 2500, 2150]
 
-# 繪製圖表
+# Plot
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(age_labels, lower_limits, marker='o', label='建議攝取熱量 (下限)')
 ax.plot(age_labels, upper_limits, marker='o', label='建議攝取熱量 (上限)')
-ax.set_xlabel('年齡', fontproperties=prop)
-ax.set_ylabel('建議攝取熱量 (kcal)', fontproperties=prop)
-ax.set_title('不同年齡段建議攝取熱量範圍', fontproperties=prop)
-ax.legend(prop=prop)
+ax.set_xlabel('年齡')
+ax.set_ylabel('建議攝取熱量 (kcal)')
+ax.set_title('不同年齡段建議攝取熱量範圍')
+ax.legend()
 ax.grid(True)
 
-# 在 Streamlit 中顯示圖表
+# Display the plot in Streamlit
 st.pyplot(fig)
-
