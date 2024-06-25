@@ -68,8 +68,8 @@ st.altair_chart(chart, use_container_width=True)
 
 
 
-import streamlit as st
 import matplotlib.pyplot as plt
+
 
 # Data
 age_labels = ["13 - 15", "16 - 18", "19 - 30", "31 - 50", "51 - 70", "71 - "]
