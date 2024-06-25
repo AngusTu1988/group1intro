@@ -64,3 +64,30 @@ chart = (
     .properties(height=320)
 )
 st.altair_chart(chart, use_container_width=True)
+
+
+
+
+import streamlit as st
+import matplotlib.pyplot as plt
+
+# Data
+age_labels = ["13 - 15", "16 - 18", "19 - 30", "31 - 50", "51 - 70", "71 - "]
+lower_limits = [2400, 2150, 1850, 1800, 1700, 1650]
+upper_limits = [2800, 3350, 2700, 2650, 2500, 2150]
+
+# Plot
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.plot(age_labels, lower_limits, marker='o', label='建議攝取熱量 (下限)')
+ax.plot(age_labels, upper_limits, marker='o', label='建議攝取熱量 (上限)')
+ax.set_xlabel('年齡')
+ax.set_ylabel('建議攝取熱量 (kcal)')
+ax.set_title('不同年齡段建議攝取熱量範圍')
+ax.legend()
+ax.grid(True)
+
+# Display the plot in Streamlit
+st.pyplot(fig)
+
+
+
