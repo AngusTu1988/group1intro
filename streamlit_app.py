@@ -13,7 +13,11 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto"
 )
-
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
 # Inject custom CSS to control the width
 st.markdown(
     """
