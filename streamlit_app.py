@@ -13,38 +13,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto"
 )
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-# Inject custom CSS to control the width
-st.markdown(
-    """
-    <style>
-    .main .block-container {
-        max-width: 800px;
-        margin: auto;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-st.title('Introduction')
-
-'''
-## 熱量是什麼？為什麼我們需要熱量？
-任何事物的運作都需要能量，也包含生物的運動、心臟跳動、思考、生長發育都需要消耗能量。在營養學上，最主要的熱量單位是大卡（千卡，kcal），熱量來自於三大營養素，醣類、蛋白質與脂肪，醣類與蛋白質一公克可以提供 4 大卡的熱量，脂肪一公克則可提供 9 大卡，每克的酒精則能提供 7 大卡熱量；維生素、礦物質、纖維和水則不會提供我們身體熱量。
-
-攝取的食物，會經過體內一連串複雜的消化過程再轉化為熱量，並維持人體基本代謝，其餘則以肝醣的形式儲存於肝臟、供給肌肉收縮消耗，多出的熱量則以脂肪組織儲存，常在皮下或內臟周圍組織。
-
-'''
-
-
-'''
-
-'''
 tab1, tab2, tab3 = st.tabs(["每日熱量攝取建議量", "脂溶性維生素/微量元素建議攝取量", "維生素B群建議攝取量"])
 
 with tab1:
