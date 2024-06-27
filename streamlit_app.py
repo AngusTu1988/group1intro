@@ -333,7 +333,7 @@ with tab3:
                 orientation="h",
                 x=0.5,
                 xanchor="center",
-                y=-0.5,
+                y=-0.6,
                 yanchor="bottom"            
             )               
             
