@@ -309,9 +309,11 @@ with tab3:
                     },
                     title=f"{group1} Distribution for {gender1}",
                     labels={'Amount1': y_axis_title1})
+
+        
         fig.update_layout(
             legend=dict(
-                orientation="h",
+                orientation="v",
                 x=-0.5,
                 xanchor="center",
                 y=-0.7,
