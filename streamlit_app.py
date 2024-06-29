@@ -252,7 +252,7 @@ with tab2:
                 orientation="h",
                 x=0.5,
                 xanchor="center",
-                y=-0.4,
+                y=-0.6,
                 yanchor="bottom"            
             )               
             
@@ -313,11 +313,7 @@ with tab3:
         
         fig1.update_layout(
             legend=dict(
-                orientation="h",
-                x=0.5,
-                xanchor="center",
-                y=-0.7,
-                yanchor="bottom"            
+                orientation="h"          
             )               
             
         )
