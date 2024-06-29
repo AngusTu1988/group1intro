@@ -6,13 +6,23 @@ import matplotlib as plt
 import plotly.express as px
 
 
-
 # Set page configuration
 st.set_page_config(
     page_title="Intro",
     layout="wide",
     initial_sidebar_state="auto"
 )
+
+st.markdown("""
+    <style>
+    .custom-class {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 tab1, tab2, tab3 = st.tabs(["每日熱量攝取建議量", "脂溶性維生素/微量元素建議攝取量", "維生素B群建議攝取量"])
 
 with tab1:
