@@ -250,9 +250,9 @@ with tab2:
         fig.update_layout(
             legend=dict(
                 orientation="h",
-                x=-0.5,
+                x=0,
                 xanchor="center",
-                y=-0.6,
+                y=-1,
                 yanchor="bottom"            
             )               
             
