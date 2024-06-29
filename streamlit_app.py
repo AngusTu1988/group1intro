@@ -311,9 +311,9 @@ with tab3:
                     labels={'Amount1': y_axis_title1})
 
         
-        fig.update_layout(
+        fig1.update_layout(
             legend=dict(
-                orientation="v",
+                orientation="h",
                 x=-0.5,
                 xanchor="center",
                 y=-0.7,
