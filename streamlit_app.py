@@ -314,9 +314,9 @@ with tab3:
         fig1.update_layout(
             legend=dict(
                 orientation="h",
-                x=2,
+                x=0,
                 xanchor="center",
-                y=-1.2,
+                y=-2,
                 yanchor="bottom"            
             )               
             
