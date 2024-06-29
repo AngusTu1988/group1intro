@@ -310,11 +310,8 @@ with tab3:
                     title=f"{group1} Distribution for {gender1}",
                     labels={'Amount1': y_axis_title1})
         
-        
-                       
+                              
             
-        )
-
         # Display the chart in Streamlit
         
         st.plotly_chart(fig1)
