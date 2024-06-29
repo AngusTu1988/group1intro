@@ -252,7 +252,7 @@ with tab2:
                 orientation="h",
                 x=0,
                 xanchor="center",
-                y=-1,
+                y=-0.5,
                 yanchor="bottom"            
             )               
             
