@@ -320,7 +320,9 @@ with tab3:
                 yanchor="bottom",
                 font=dict(
             size=10  # 設置圖例字體大小，根據需要調整大小
-        )
+               ),
+                title=dict(text='Legend Title', side='top'),
+        itemwidth=100  # 設置每個圖例項目的寬度，適當值以實現換行
             )               
             
         )
