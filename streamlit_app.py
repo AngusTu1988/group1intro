@@ -318,26 +318,22 @@ with tab3:
                 xanchor="center",
                 y=-1,
                 yanchor="bottom",
-                font=dict(
-            size=10  # 設置圖例字體大小，根據需要調整大小
-               ),
+                font=dict(size=10),
                 itemwidth=100,
-                 title=dict(text='Legend', side='top')
+                title=dict(text='Legend', side='top')
             ),
             margin=dict(b=100),# 設置每個圖例項目的寬度，適當值以實現換行
-                         
-            fig1.update_layout(
-    autosize=True,
-    width=None,  # 根據容器自適應寬度
-    height=None,
-        )
+            )            
+        fig1.update_layout(
+            autosize=True,
+            width=None,
+            height=None,
         )
         
-                              
             
         # Display the chart in Streamlit
         
-        st.plotly_chart(fig1)
+        st.plotly_chart(fig1, use_container_width=True)
 
 
 
