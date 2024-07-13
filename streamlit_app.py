@@ -316,7 +316,7 @@ with tab3:
                 orientation="h",
                 x=0,
                 xanchor="center",
-                y=-2,
+                y=-1.8,
                 yanchor="bottom",
                 font=dict(size=10),
                 itemwidth=100
