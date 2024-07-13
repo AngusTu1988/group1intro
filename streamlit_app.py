@@ -316,12 +316,11 @@ with tab3:
                 orientation="h",
                 x=0,
                 xanchor="center",
-                y=-1.6,
+                y=-1.8,
                 yanchor="bottom",
                 font=dict(size=10),
-                itemwidth=100,
-                title=dict(text='Legend', side='top')
-            ),
+                itemwidth=100
+                ),
             margin=dict(b=100),# 設置每個圖例項目的寬度，適當值以實現換行
             )            
         fig1.update_layout(
