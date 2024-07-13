@@ -81,7 +81,9 @@ with tab1:
     ).properties(
         width=600,
         height=400,
-        title='每日建議卡路里攝取量(kcal)'    
+        title='每日建議卡路里攝取量(kcal)',    
+    ).configure_legend(
+        orient='bottom'
     )
 
     # Create the scatter plot
