@@ -316,7 +316,7 @@ with tab3:
                 orientation="h",
                 x=0,
                 xanchor="center",
-                y=-2,
+                y=-1.5,
                 yanchor="bottom"            
             )               
             
