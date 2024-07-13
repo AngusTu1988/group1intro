@@ -317,7 +317,10 @@ with tab3:
                 x=0,
                 xanchor="center",
                 y=-1,
-                yanchor="bottom"            
+                yanchor="bottom",
+                font=dict(
+            size=10  # 設置圖例字體大小，根據需要調整大小
+        )
             )               
             
         )
