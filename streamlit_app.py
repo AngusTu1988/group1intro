@@ -324,12 +324,13 @@ with tab3:
                 itemwidth=100,
                  title=dict(text='Legend', side='top')
             ),
-    margin=dict(b=100)# 設置每個圖例項目的寬度，適當值以實現換行
-            )               
+            margin=dict(b=100),# 設置每個圖例項目的寬度，適當值以實現換行
+                         
             fig1.update_layout(
     autosize=True,
     width=None,  # 根據容器自適應寬度
     height=None,
+        )
         )
         
                               
