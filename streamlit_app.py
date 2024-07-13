@@ -314,9 +314,9 @@ with tab3:
         fig1.update_layout(
             legend=dict(
                 orientation="h",
-                x=0,
+                x=0.5,
                 xanchor="center",
-                y=-1,
+                y=-0.2,
                 yanchor="bottom",
                 font=dict(
             size=10  # 設置圖例字體大小，根據需要調整大小
